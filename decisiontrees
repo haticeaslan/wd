@@ -3,3 +3,4 @@ Decision trees(karar ağaçları) bir hedefe ulaşma ihtimali olan stratejinin b
 karar analizlerinde ve operasyonel araştırmalarda kullanılır. Veri madenciliğinde iki tip karar ağacı kullanılır: 
 Sınıflandırma ağacı analizi ve regresyon analizi
 ( https://en.wikipedia.org/wiki/Decision_tree )
+Karar ağaçları sonuç olarak karar düğümleri ve yaprak düğümlerinden oluşur.
