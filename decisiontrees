@@ -2,9 +2,10 @@ Decision Trees
 Tree-based yani ağaç tabanlı yöntemler yorumlama için basit ve kullanışlı yöntemlerdendir. Verilen belirli bir gözlem için tahmin yapmak 
 amacıyla genellikle eğitim gözlemlerinin ortalaması ya da ait olduğu bölgedeki modu kullanılır. Tahmini alanı bölmek için kullanılan bölme
 kuralları kümesi bir ağaçta özetlenebilir ve bu tip yaklaşımlar karar ağaçları olarak adlandırılır. Karar ağaçları hem regresyon hem de
-sınıflandırma problemlerine uygulanabilir.
-Amaç hem kategorik hem nümerik verilerden faydalanarak
-çıkarılan basit karar kuralları ile bir hedef değişkenin değerini öngören model oluşturmaktır. 
+sınıflandırma problemlerine uygulanabilir. Birden fazla bağımsız parametre ve bir bağıml parametre içeren data setinde, bağımlı parametre
+kategorik ise sınıflandırma ağacı, sürekli yapıda ise regresyon ağacı adını alır.
+Amaç hem kategorik hem nümerik verilerden faydalanarak çıkarılan basit karar kuralları ile bir hedef değişkeninin değerini 
+öngören model oluşturmaktır. 
 Karar ağaçları karar düğümleri ve yaprak düğümlerinden oluşur.
 Veri madenciliğinde iki tip karar ağacı kullanılır: 
 Sınıflandırma ağacı analizi ve regresyon analizi
