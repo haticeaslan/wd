@@ -12,13 +12,16 @@ gözlemin birçok farklı grup veya sınıftan birinden geldiği bilinmektedir v
 değişkenleri kullanmaktır. Bazı durumlarda, analist hangi öngördürücülerin yanıtla ilişkili olduğunu, bunların nasıl ilişkili olduğunu ve
 belki de öngörücü değişkenlerin bile başkaları ile tepki tahmininde nasıl etkileşime girdiğini belirlemek isteyebilir.
 (kaynak kitap chapter 5:High-Dimensional Data Analysis in Cancer Research)
-
 Amaç hem kategorik hem nümerik verilerden faydalanarak çıkarılan basit karar kuralları ile bir hedef değişkeninin değerini öngören model
 oluşturmaktır.
+
 Karar Ağaçları Terminolojisi
 Kök Düğüm: Tüm popülasyonu veya alınmış örneği temsil eder ve iki ya da daha fazla homoje kümeye ayrılır.
 Yaprak Düğüm:Düğümler bölünmüyorsa yaprak düğüm adını alır.
 Karar Düğümü: Bir alt düğüm başka alt düğümlere ayrılırsa, karar düğümü olarak adlandırılır.
+Ata ve Çocuk Düğümü:Belli bir düğümün herhangi bir alt düğümüne çocuk düğüm denir ve verilen düğüm sırasıyla çocuğun üstüdür.
+Alt Ağaç: Ağacın bir alt bölümüne alt ağaç adı verilir.
+Bölme: Bir düğümün iki veya daha fazla alt düğümlere bölünmesi işlemidir.
 Sınıflandırma ağacı girdi olarak iki dizi alır: alıştırma örnekleri tutan seyrek veya yoğun bir dizi ve boyutu [n_samples, n_features] 
 olan X dizisi, alıştırma örnekleri için sınıf etiketlerini tutan ve tamsayı değerler alan Y boyut [n_samples] dizisi.
 >>> from sklearn import tree
