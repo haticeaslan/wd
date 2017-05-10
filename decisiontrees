@@ -5,8 +5,14 @@ ortalaması ya da ait olduğu bölgedeki modu kullanılır. Tahmini alanı bölm
 ve bu tip yaklaşımlar karar ağaçları olarak adlandırılır. Karar ağaçlarının otomatik olarak oluşturulması, Morgan & Sonquist (1963) ve 
 Morgan & Messenger (1973) tarafından sosyal bilimler alanında yapılan çalışmalara dayanır.
 ( kaynak1-kitap :W.N. Venables B.D. Ripley Modern Applied Statistics with S-PLUS Third Edition)
+
 Karar ağaçları hem regresyon hem de sınıflandırma problemlerine uygulanabilir. Birden fazla bağımsız parametre ve bir bağımlı parametre
-içeren data setinde, bağımlı parametre kategorik ise sınıflandırma ağacı, sürekli yapıda ise regresyon ağacı adını alır.
+içeren data setinde, bağımlı parametre kategorik ise sınıflandırma ağacı, sürekli yapıda ise regresyon ağacı adını alır.Yani, her bir
+gözlemin birçok farklı grup veya sınıftan birinden geldiği bilinmektedir ve amaç etiketlenmemiş gözlemleri sınıflandırmak için öngördürücü
+değişkenleri kullanmaktır. Bazı durumlarda, analist hangi öngördürücülerin yanıtla ilişkili olduğunu, bunların nasıl ilişkili olduğunu ve
+belki de öngörücü değişkenlerin bile başkaları ile tepki tahmininde nasıl etkileşime girdiğini belirlemek isteyebilir.
+(kaynak kitap chapter 5:High-Dimensional Data Analysis in Cancer Research)
+
 Amaç hem kategorik hem nümerik verilerden faydalanarak çıkarılan basit karar kuralları ile bir hedef değişkeninin değerini öngören model
 oluşturmaktır.
 Karar Ağaçları Terminolojisi
