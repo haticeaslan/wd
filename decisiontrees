@@ -16,22 +16,19 @@ Amaç hem kategorik hem nümerik verilerden faydalanarak çıkarılan basit kara
 oluşturmaktır.
 
 Karar Ağaçları Terminolojisi
-Kök Düğüm: Tüm popülasyonu veya alınmış örneği temsil eder ve iki ya da daha fazla homoje kümeye ayrılır.
-Yaprak Düğüm:Düğümler bölünmüyorsa yaprak düğüm adını alır.
-Karar Düğümü: Bir alt düğüm başka alt düğümlere ayrılırsa, karar düğümü olarak adlandırılır.
-Ata ve Çocuk Düğümü:Belli bir düğümün herhangi bir alt düğümüne çocuk düğüm denir ve verilen düğüm sırasıyla çocuğun üstüdür.
-Alt Ağaç: Ağacın bir alt bölümüne alt ağaç adı verilir.
-Bölme: Bir düğümün iki veya daha fazla alt düğümlere bölünmesi işlemidir.
-Sınıflandırma ağacı girdi olarak iki dizi alır: alıştırma örnekleri tutan seyrek veya yoğun bir dizi ve boyutu [n_samples, n_features] 
-olan X dizisi, alıştırma örnekleri için sınıf etiketlerini tutan ve tamsayı değerler alan Y boyut [n_samples] dizisi.
->>> from sklearn import tree
->>> X = [[0, 0], [1, 1]]
->>> Y = [0, 1]
->>> clf = tree.DecisionTreeClassifier()
->>> clf = clf.fit(X, Y)
->>> clf.predict([[2., 2.]])
-array([1])
-( http://scikit-learn.org/stable/modules/tree.html )
+1.Kök Düğüm: Tüm popülasyonu veya alınmış örneği temsil eder ve iki ya da daha fazla homoje kümeye ayrılır.
+2.Yaprak Düğüm:Düğümler bölünmüyorsa yaprak düğüm adını alır.
+3.Karar Düğümü: Bir alt düğüm başka alt düğümlere ayrılırsa, karar düğümü olarak adlandırılır.
+4.Ata ve Çocuk Düğümü:Belli bir düğümün herhangi bir alt düğümüne çocuk düğüm denir ve verilen düğüm sırasıyla çocuğun üstüdür.
+5.Alt Ağaç: Ağacın bir alt bölümüne alt ağaç adı verilir.
+6.Bölme: Bir düğümün iki veya daha fazla alt düğümlere bölünmesi işlemidir.
+Bunlar karar ağaçları için kullanılan yaygın terimlerdir.
+
+Sınıflandırma Ağacı
+Kantitatif bir cevap yerine nitel bir cevabı tahmin etmek için kullanılan Sınıflandırma Ağaçlarında sınıf daha önceden atanmış bir
+değerdir. Bir sınıflandırma ağacı, sıralı bir dizi soruyu sormanın sonucudur ve dizideki her adımda sorulan soru türü, dizinin önceki
+sorularına verilen cevaplara bağlıdır.
+
 Veriyi genelleştirmeyen aşırı karmaşık ağaçlar oluşması, verideki küçük bir değişikliğin tamamen farklı bir yapı oluşturması,
 öğrenmesi zor kavramlar içermesi gibi nedenler karar ağaçlarının dezavantajlarındandır.
 En ayırt edici veriyi belirlemek için bilgi kazancı ölçülür. Bilgi kazancı ölçümünde entropi kullanılır.
