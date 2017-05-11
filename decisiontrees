@@ -27,7 +27,9 @@ Bunlar karar ağaçları için kullanılan yaygın terimlerdir.
 Sınıflandırma Ağacı
 Kantitatif bir cevap yerine nitel bir cevabı tahmin etmek için kullanılan Sınıflandırma Ağaçlarında sınıf daha önceden atanmış bir
 değerdir. Bir sınıflandırma ağacı, sıralı bir dizi soruyu sormanın sonucudur ve dizideki her adımda sorulan soru türü, dizinin önceki
-sorularına verilen cevaplara bağlıdır.
+sorularına verilen cevaplara bağlıdır.Sınıflandırma ağacında eğitim verisinde terminal düğüm tarafından elde edilen değer (sınıf) o
+bölgedeki gözlemlerin modudur. Böylece, görünmeyen bir veri gözlemi o bölgede düşerse, tahminini mod değeri ile yapacağız.
+
 
 Veriyi genelleştirmeyen aşırı karmaşık ağaçlar oluşması, verideki küçük bir değişikliğin tamamen farklı bir yapı oluşturması,
 öğrenmesi zor kavramlar içermesi gibi nedenler karar ağaçlarının dezavantajlarındandır.
