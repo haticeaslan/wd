@@ -40,10 +40,14 @@ yüksek boyutlu kutular olarak düşünebiliriz.Stratejik bölünmeler yapma kar
 kullanıcı tarafından algoritmada tanımlanan bir durdurma kriterine ulaşılana kadar sürer.Bu bölme işlemi durdurma kriterlerine ulaşılana
 kadar tamamen yetişmiş ağaçlarda sonlanır.
 
-Bir ağaç, ilk önce tüm gözlemleri içeren bir "kök" düğümü düşünülerek yetiştirilir. Bu düğümdeki gözlemler tek bir öngörücü değişkende
-bir "bölme" kullanarak bir sol ve bir sağdaki iki alt nesne düğümünden birine gönderilir( kaynak High-Dimensional Data Analysis in
-Cancer Research chapter 5).Bir düğüm, değişken kümesinin alt kümesidir ve bir terminal veya terminal olmayan bir düğüm olabilir.Bir
-nonterminal (veya ana) düğüm, iki kız düğümüne bölünen bir düğümdür (ikili bölme).
+Bir ağaç, ilk önce tüm gözlemleri içeren bir "kök" düğümü düşünülerek yetiştirilir, bu düğümdeki gözlemler tek bir öngörücü değişkende
+bir "bölme" kullanılarak bir sol ve bir sağdaki iki alt nesne düğümünden birine gönderilir( kaynak High-Dimensional Data Analysis in
+Cancer Research chapter 5).Bir düğüm, değişken kümesinin alt kümesidir ve bir terminal olabilir veya terminal olmayabilir. Bir
+nonterminal (veya ana) düğüm, iki kız düğümüne bölünen bir düğümdür(ikili bölme). Kategorik bir öngördürücü değişkeni için, bir bölme
+sola bir alt grup gönderir ve geri kalanını ise sağa gönderir.Bir ağacın bir düğümü iki soyuna bölmek için kullandığı belirli bölme, her
+tahmini değişkende olası tüm bölünmeleri göz önüne alarak seçilir. Bazı ölçütlere göre "en iyi" değeri veren tahmin edici ve bölünmüş
+kombinasyon, düğümü bölmek için kullanılır. Aynı prosedür, bazen "özyinelemeli bölümleme" olarak adlandırılan soyundan gelen düğümlere
+uygulanır.
 
 Veriyi genelleştirmeyen aşırı karmaşık ağaçlar oluşması, verideki küçük bir değişikliğin tamamen farklı bir yapı oluşturması,
 öğrenmesi zor kavramlar içermesi gibi nedenler karar ağaçlarının dezavantajlarındandır.
