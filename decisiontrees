@@ -1,6 +1,6 @@
 Decision Trees
 Yorumlama için basit ve kullanışlı yöntemlerden olan Ağaç Tabanlı Yöntemler(Tree Based Methods) yüksek doğruluk, kararlılık ve 
-yorumlanma kolaylığı ile tahmini modelleri güçlendirir. Verilen belirli bir gözlem için tahmin yapmak amacıyla genellikle eğitim 
+yorumlanma kolaylığı ile tahmini modellerini güçlendirir. Verilen belirli bir gözlem için tahmin yapmak amacıyla genellikle eğitim 
 gözlemlerinin ortalaması ya da ait olduğu bölgedeki modu kullanılır. Tahmini alanı bölmek için kullanılan bölme kuralları kümesi bir
 ağaçta özetlenebilir ve bu tip yaklaşımlar karar ağaçları olarak adlandırılır. Karar ağaçlarının otomatik olarak oluşturulması, 
 Morgan & Sonquist (1963) ve Morgan & Messenger (1973) tarafından sosyal bilimler alanında yapılan çalışmalara dayanır.
@@ -35,14 +35,14 @@ yerine nitel bir cevabı tahmin etmek için kullanılan Sınıflandırma Ağaçl
 8.1.2 An Introduction to Statistical Learning with Applications in R ). Bir sınıflandırma ağacı, sıralı bir dizi soruyu sormanın
 sonucudur ve dizideki her adımda sorulan soru türü, dizinin önceki sorularına verilen cevaplara bağlıdır.Sınıflandırma ağacında eğitim
 verisinde terminal düğüm tarafından elde edilen değer o bölgedeki gözlemlerin modudur. Böylece, görünmeyen bir veri gözlemi o bölgede
-düşerse, tahminini mod değeri ile yapacağız. Tahmini alanı belirgin ve çakışmayan bölümlere ayırır. Basit olması adına, bu bölgeleri
-yüksek boyutlu kutular olarak düşünebiliriz.Stratejik bölünmeler yapma kararı bir ağacın doğruluğunu büyük ölçüde etkiler. Bölünme, 
+düşerse, tahmin mod değeri ile yapılır. Tahmini alanı belirgin ve çakışmayan bölümlere ayırır. Basit olması adına, bu bölgeler
+yüksek boyutlu kutular olarak düşünülebilir.Stratejik bölünmeler yapma kararı bir ağacın doğruluğunu büyük ölçüde etkiler. Bölünme, 
 kullanıcı tarafından algoritmada tanımlanan bir durdurma kriterine ulaşılana kadar sürer.Bu bölme işlemi durdurma kriterlerine ulaşılana
-kadar tamamen yetişmiş ağaçlarda sonlanır.
+kadar devam eder ve tamamen yetişmiş ağaçlarda sonlanır.
 
 Bir ağaç, ilk önce tüm gözlemleri içeren bir "kök" düğümü düşünülerek yetiştirilir, bu düğümdeki gözlemler tek bir öngörücü değişkende
-bir "bölme" kullanılarak bir sol ve bir sağdaki iki alt nesne düğümünden birine gönderilir( kaynak High-Dimensional Data Analysis in
-Cancer Research chapter 5).Bir düğüm, değişken kümesinin alt kümesidir ve bir terminal olabilir veya terminal olmayabilir. Bir
+bir "bölme" kullanılarak biri soldaki ve biri sağdaki iki alt nesne düğümünden birine gönderilir( kaynak High-Dimensional Data Analysis
+in Cancer Research chapter 5).Bir düğüm, değişken kümesinin alt kümesidir ve bir terminal olabilir veya olmayabilir. Bir
 nonterminal (veya ana) düğüm, iki kız düğümüne bölünen bir düğümdür(ikili bölme). Bölünmeyen bir düğüme bir terminal düğümü denir
 ve bir sınıf etiketi atanır. Kategorik bir öngördürücü değişkeni için, bir bölme sola bir alt grup gönderir ve geri kalanını ise sağa
 gönderir.Bir ağacın bir düğümü iki soyuna bölmek için kullandığı belirli bölme, her tahmini değişkende olası tüm bölünmeleri göz önüne
