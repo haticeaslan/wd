@@ -59,4 +59,4 @@ En ayırt edici veriyi belirlemek için bilgi kazancı ölçülür. Bilgi kazanc
 Satır sınıflandırmak için gerekli bilgi :  I(s1,s2,...,sm)=-∑i=1,m (si/s)log2(si/s)
 Entropi=$$E(C|A_K)=  \\sum_{j=1}^{M_K}  p(a_k,j)*[-\\sum_{i=1}^{N}  p(c_i|a_k,j)log_2p(c_i|a_k,j)]$$ (1)
 Kazanç(A)=I(s1,...,sm)-E(A)
-(www.ayhandemiriz.com/SakaryaWebSite/slides/DMHafta5.ppt)
+
