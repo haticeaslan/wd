@@ -25,16 +25,20 @@ Karar Ağaçları Terminolojisi
 Bunlar karar ağaçları için kullanılan yaygın terimlerdir.
 
 Sınıflandırma Ağacı
-Sınıflandırma ağaçları (Classification Trees; CART) 1984 yılında Leo Breiman, Jerome Friedman, Richard Olshen ve Charles Stone
-tarafından geliştirilen bir yöntemdir. Bu yöntem veri madenciliğinde oldukça önemli bir yere sahiptir( kaynak Breiman, L., 2001, 
-Random forests, Machine Learning, 45, 5-32 p). Kantitatif bir cevap yerine nitel bir cevabı tahmin etmek için kullanılan Sınıflandırma
-Ağaçlarında sınıf daha önceden atanmış bir değerdir.(kaynak: chapter 8.1.2 An Introduction to Statistical Learning with Applications in
-R ). Bir sınıflandırma ağacı, sıralı bir dizi soruyu sormanın sonucudur ve dizideki her adımda sorulan soru türü, dizinin önceki
-sorularına verilen cevaplara bağlıdır.Sınıflandırma ağacında eğitim verisinde terminal düğüm tarafından elde edilen değer o bölgedeki
-gözlemlerin modudur. Böylece, görünmeyen bir veri gözlemi o bölgede düşerse, tahminini mod değeri ile yapacağız. Tahmini alanı belirgin
-ve çakışmayan bölümlere ayırır. Basit olması adına, bu bölgeleri yüksek boyutlu kutular olarak düşünebiliriz.Stratejik bölünmeler
-yapma kararı bir ağacın doğruluğunu büyük ölçüde etkiler. Bölünme, kullanıcı tarafından algoritmada tanımlanan bir durdurma kriterine
-ulaşılana kadar sürer.Bu bölme işlemi durdurma kriterlerine ulaşılana kadar tamamen yetişmiş ağaçlarda sonlanır.
+Sınıflandırma ağaçları (Classification Trees) 1984 yılında Leo Breiman, Jerome Friedman, Richard Olshen ve Charles Stone tarafından
+geliştirilen bir yöntemdir. Parametrik olmayan bu yöntem veri madenciliğinde oldukça önemli bir yere sahiptir( kaynak Breiman, L., 2001,
+Random forests, Machine Learning, 45, 5-32 p).Parametrik olmayan istatistikler ("dağılımsız istatistikler" de denir), bir popülasyonun
+bazı özelliklerini tanımlayabilen, bu nitelik hakkında hipotezleri test edebilen, diğer bir özellikle olan ilişkisini veya zaman içinde
+ilgili yapılardaki bu özellikteki farklılıkları test edebilen, popülasyonun veri dağılımı hakkında hiçbir varsayıma ihtiyaç duymayan ve
+aralık düzeyinde ölçüm gerektirmeyen bir yöntemdir. (kaynak: http://psych.unl.edu/psycrs/971/nonpar/intro.pdf). Kantitatif bir cevap
+yerine nitel bir cevabı tahmin etmek için kullanılan Sınıflandırma Ağaçlarında sınıf daha önceden atanmış bir değerdir.(kaynak: chapter
+8.1.2 An Introduction to Statistical Learning with Applications in R ). Bir sınıflandırma ağacı, sıralı bir dizi soruyu sormanın
+sonucudur ve dizideki her adımda sorulan soru türü, dizinin önceki sorularına verilen cevaplara bağlıdır.Sınıflandırma ağacında eğitim
+verisinde terminal düğüm tarafından elde edilen değer o bölgedeki gözlemlerin modudur. Böylece, görünmeyen bir veri gözlemi o bölgede
+düşerse, tahminini mod değeri ile yapacağız. Tahmini alanı belirgin ve çakışmayan bölümlere ayırır. Basit olması adına, bu bölgeleri
+yüksek boyutlu kutular olarak düşünebiliriz.Stratejik bölünmeler yapma kararı bir ağacın doğruluğunu büyük ölçüde etkiler. Bölünme, 
+kullanıcı tarafından algoritmada tanımlanan bir durdurma kriterine ulaşılana kadar sürer.Bu bölme işlemi durdurma kriterlerine ulaşılana
+kadar tamamen yetişmiş ağaçlarda sonlanır.
 
 Bir ağaç, ilk önce tüm gözlemleri içeren bir "kök" düğümü düşünülerek yetiştirilir. Bu düğümdeki gözlemler tek bir öngörücü değişkende
 bir "bölme" kullanarak bir sol ve bir sağdaki iki alt nesne düğümünden birine gönderilir( kaynak High-Dimensional Data Analysis in
