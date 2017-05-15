@@ -53,6 +53,6 @@ Veriyi genelleştirmeyen aşırı karmaşık ağaçlar oluşması, verideki kü�
 öğrenmesi zor kavramlar içermesi gibi nedenler karar ağaçlarının dezavantajlarındandır.
 En ayırt edici veriyi belirlemek için bilgi kazancı ölçülür. Bilgi kazancı ölçümünde entropi kullanılır.
 Satır sınıflandırmak için gerekli bilgi :  I(s1,s2,...,sm)=-∑i=1,m (si/s)log2(si/s)
-Entropi=E(A): ∑[(s1j+...+smj)/s]I(s1j,...,smj)
+Entropi=$$E(C|A_K)=  \\sum_{j=1}^{M_K}  p(a_k,j)*[-\\sum_{i=1}^{N}  p(c_i|a_k,j)log_2p(c_i|a_k,j)]$$ (1)
 Kazanç(A)=I(s1,...,sm)-E(A)
 (www.ayhandemiriz.com/SakaryaWebSite/slides/DMHafta5.ppt)
