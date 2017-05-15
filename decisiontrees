@@ -52,11 +52,11 @@ prosedür, bazen "özyinelemeli bölümleme" olarak adlandırılan soyundan gele
 Kategorik tahminci değişkenlerin kullanıldığı sınıflandırma ağaçları için bölünme kuralı, C kategori altkümesine bağlıdır. 
 (xi ∈ C) olan gözlemler sol alt düğüme atanırken (xi ∉ C ) koşuluna uyan gözlemler ise sağ alt düğüme yerleştirilir. Ağaç oluştururken
 düğümleri bölerek alt düğümler oluşturmada en çok kullanılan kurallar aşağıdaki gibidir:
+Entropi, bir sistemdeki düzensizliğin ya da belirsizliğin ölçüsüdür. 
 
-Veriyi genelleştirmeyen aşırı karmaşık ağaçlar oluşması, verideki küçük bir değişikliğin tamamen farklı bir yapı oluşturması,
-öğrenmesi zor kavramlar içermesi gibi nedenler karar ağaçlarının dezavantajlarındandır.
 En ayırt edici veriyi belirlemek için bilgi kazancı ölçülür. Bilgi kazancı ölçümünde entropi kullanılır.
 Satır sınıflandırmak için gerekli bilgi :  I(s1,s2,...,sm)=-∑i=1,m (si/s)log2(si/s)
 Entropi=$$E(C|A_K)=  \\sum_{j=1}^{M_K}  p(a_k,j)*[-\\sum_{i=1}^{N}  p(c_i|a_k,j)log_2p(c_i|a_k,j)]$$ (1)
 Kazanç(A)=I(s1,...,sm)-E(A)
-
+Veriyi genelleştirmeyen aşırı karmaşık ağaçlar oluşması, verideki küçük bir değişikliğin tamamen farklı bir yapı oluşturması,
+öğrenmesi zor kavramlar içermesi gibi nedenler karar ağaçlarının dezavantajlarındandır.
